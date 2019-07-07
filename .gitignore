@@ -1,0 +1,27 @@
+# Installable packages
+
+node_modules/
+
+# Configuration
+
+.config/
+.vscode/
+
+# Building artifacts
+
+lib/
+bld/
+.cache/
+*.tgz
+
+# Debugging outputs
+
+*.log
+
+# Testing files
+
+/test.*
+
+# GitHub Pages
+
+/gh-pages

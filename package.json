@@ -1,0 +1,59 @@
+{
+  "name": "vuex-along",
+  "version": "1.2.6",
+  "description": "Auto save vuex state to local",
+  "main": "lib/main.js",
+  "private": false,
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/js-md5": "^0.4.2",
+    "@types/jest": "^24.0.11",
+    "@types/lodash": "^4.14.123",
+    "@types/lowdb": "^1.0.9",
+    "babel-loader": "^8.0.6",
+    "jest": "^24.7.1",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.2"
+  },
+  "scripts": {
+    "build": "yarn build:plugins && yarn build:demo",
+    "build:plugins": "tsc --emitDeclarationOnly && babel src --out-dir lib --extensions \".ts,.tsx\"",
+    "build:demo": "cd ./demo && yarn && yarn build",
+    "dev:demo": "cd ./demo && yarn serve",
+    "run:demo": "cd ./demo && yarn && yarn serve",
+    "test": "jest --silent"
+  },
+  "dependencies": {
+    "js-md5": "^0.7.3",
+    "lodash": "^4.17.11",
+    "lowdb": "^1.0.0",
+    "vue": "^2.6.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boenfu/vuex-along.git"
+  },
+  "keywords": [
+    "vuex"
+  ],
+  "author": "boenfu",
+  "bugs": {
+    "url": "https://github.com/boenfu/vuex-along/issues"
+  },
+  "homepage": "https://github.com/boenfu/vuex-along#readme",
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module"
+    }
+  }
+}
